@@ -144,6 +144,7 @@ namespace Sklep.DAL
                     Desc = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
                     Price = 16
                 },
+                
                 new Film()
                 {
                     FilmId = 10,

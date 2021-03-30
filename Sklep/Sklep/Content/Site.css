@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    background-color: chocolate;
+    margin: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,3 +16,35 @@ textarea {
     max-width: 280px;
 }
 
+#menu {
+    text-align: right;
+    height: 500px;
+    padding: 30px;
+    background-image: url("banner-film.png");
+    background-size: cover;
+    font-size: 50px;
+}
+
+a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px black;
+}
+
+    a:hover {
+        text-shadow: none;
+    }
+
+table {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+#stopka {
+    font-size: 20px;
+    text-align: right;
+    padding: 30px;
+    background-color: brown;
+}

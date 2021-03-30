@@ -15,7 +15,7 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            Category category = new Category()
+            /*Category category = new Category()
             {
                 CategoryId = 1,
                 Name = "Horror",
@@ -24,9 +24,15 @@ namespace Sklep.Controllers
             };
 
             db.Categories.Add(category);
-            db.SaveChanges();
+            db.SaveChanges();*/
 
             return View();
         }
+        
+        public ActionResult StaticSite(string name)
+        {
+            return View(name);
+        }
+    
     }
 }

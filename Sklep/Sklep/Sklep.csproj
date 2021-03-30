@@ -95,6 +95,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\alone.jpg" />
+    <Content Include="Content\banner-film.jpg" />
+    <Content Include="Content\index.html" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -107,6 +110,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103300759224_add field Length.cs" />
+    <Compile Include="Migrations\202103300759224_add field Length.designer.cs">
+      <DependentUpon>202103300759224_add field Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +125,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Kontakt.cshtml" />
+    <Content Include="Views\Home\Onas.cshtml" />
+    <Content Include="Views\Home\Regulamin.cshtml" />
+    <Content Include="Views\Home\MetodyPlatnosci.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,6 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103300759224_add field Length.resx">
+      <DependentUpon>202103300759224_add field Length.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
