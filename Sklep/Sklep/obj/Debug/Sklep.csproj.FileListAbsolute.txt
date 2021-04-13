@@ -74,5 +74,6 @@ C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.cspr
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.CopyComplete
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.dll
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.pdb
-C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.addfieldLength.resources
+C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.InitialCreate.resources
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csproj.GenerateResource.cache
+C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.deleteLength.resources

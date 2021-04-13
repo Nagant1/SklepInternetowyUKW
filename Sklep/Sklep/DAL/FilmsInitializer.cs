@@ -1,21 +1,23 @@
-﻿using Sklep.Models;
+﻿using Sklep.Migrations;
+using Sklep.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
 namespace Sklep.DAL
 {
-    public class FilmsInitializer : DropCreateDatabaseAlways<FilmsContext>
+    public class FilmsInitializer : MigrateDatabaseToLatestVersion<FilmsContext, Configuration>
     {
-        protected override void Seed(FilmsContext context)
+        /*protected override void Seed(FilmsContext context)
         {
             base.Seed(context);
             SeedFilmy(context);
-        }
+        }*/
 
-        private void SeedFilmy(FilmsContext context)
+        public static void SeedFilmy(FilmsContext context)
         {
             var categories = new List<Category>()
             {
@@ -28,7 +30,7 @@ namespace Sklep.DAL
                 new Category
                 {
                     CategoryId = 2,
-                    Name = "Domukentalne",
+                    Name = "Dokumentalne",
                     Desc = "Filmy oparte na faktach"
                 },
                 new Category
@@ -53,7 +55,7 @@ namespace Sklep.DAL
 
             foreach (var category in categories)
             {
-                context.Categories.Add(category);
+                context.Categories.AddOrUpdate(category);
                 
             }
             
@@ -158,7 +160,7 @@ namespace Sklep.DAL
 
             foreach (var film in filmy)
             {
-                context.Films.Add(film);
+                context.Films.AddOrUpdate(film);
             }
             context.SaveChanges();
 

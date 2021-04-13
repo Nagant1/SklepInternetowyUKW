@@ -97,6 +97,16 @@
   <ItemGroup>
     <Content Include="Content\alone.jpg" />
     <Content Include="Content\banner-film.jpg" />
+    <Content Include="Content\GrafikiFilmy\Cube.JPG" />
+    <Content Include="Content\GrafikiFilmy\DruzynaPierscienia.JPG" />
+    <Content Include="Content\GrafikiFilmy\Hellraiser.JPG" />
+    <Content Include="Content\GrafikiFilmy\Iluzjonista.JPG" />
+    <Content Include="Content\GrafikiFilmy\MilczenieOwiec.JPG" />
+    <Content Include="Content\GrafikiFilmy\Numer23.JPG" />
+    <Content Include="Content\GrafikiFilmy\Red.JPG" />
+    <Content Include="Content\GrafikiFilmy\SekretneOkno.JPG" />
+    <Content Include="Content\GrafikiFilmy\Teksanska.jpg" />
+    <Content Include="Content\GrafikiFilmy\TylkoNieMow.JPG" />
     <Content Include="Content\index.html" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
@@ -104,20 +114,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\FilmsContext.cs" />
     <Compile Include="DAL\FilmsInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103300759224_add field Length.cs" />
-    <Compile Include="Migrations\202103300759224_add field Length.designer.cs">
-      <DependentUpon>202103300759224_add field Length.cs</DependentUpon>
+    <Compile Include="Migrations\202103231026067_InitialCreate.cs" />
+    <Compile Include="Migrations\202103231026067_InitialCreate.designer.cs">
+      <DependentUpon>202103231026067_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104130627330_delete Length.cs" />
+    <Compile Include="Migrations\202104130627330_delete Length.designer.cs">
+      <DependentUpon>202104130627330_delete Length.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\IndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -129,6 +145,7 @@
     <Content Include="Views\Home\Onas.cshtml" />
     <Content Include="Views\Home\Regulamin.cshtml" />
     <Content Include="Views\Home\MetodyPlatnosci.cshtml" />
+    <Content Include="Views\Films\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,8 +157,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202103300759224_add field Length.resx">
-      <DependentUpon>202103300759224_add field Length.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103231026067_InitialCreate.resx">
+      <DependentUpon>202103231026067_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104130627330_delete Length.resx">
+      <DependentUpon>202104130627330_delete Length.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
