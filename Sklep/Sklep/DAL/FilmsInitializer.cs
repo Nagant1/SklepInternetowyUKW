@@ -72,7 +72,9 @@ namespace Sklep.DAL
                     Title = "Teksańska Masakra Piłą Mechaniczną",
                     Director = "Marcus Nispel",
                     Desc = "20 sierpnia 1973 roku teksańska policja trafiła do stojącego na uboczu domu Thomasa Hewitta - byłego pracownika lokalnej rzeźni. Na miejscu odkryli rozkładające się zwłoki 33 osób, które zostały zamordowane przez psychopatycznego zabójcę noszącego na twarzy maskę z ludzkiej skóry i posługującego się piłą mechaniczną.",
-                    Price = 10
+                    Price = 10,
+                    PosterName = "Teksanska.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -81,7 +83,9 @@ namespace Sklep.DAL
                     Title = "Numer 23",
                     Director = "Joel Schumacher",
                     Desc = "Mężczyzna dostaje obsesji na punkcie książki, która według niego opisuje i przewiduje jego życie i przyszłość.",
-                    Price = 14
+                    Price = 14,
+                    PosterName = "Numer23.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -90,7 +94,9 @@ namespace Sklep.DAL
                     Title = "Sekretne Okno",
                     Director = "David Koepp",
                     Desc = "Uznany pisarz przenosi się na prowincję, by w spokoju tworzyć kolejne książki. Wkrótce odwiedzi go tajemniczy mężczyzna, który oskarży Raineya o plagiat.",
-                    Price = 12
+                    Price = 12,
+                    PosterName = "SekretneOkno.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -99,7 +105,9 @@ namespace Sklep.DAL
                     Title = "Władca Pierścieni: Drużyna Pierścienia",
                     Director = "Peter Jackson",
                     Desc = "Podróż hobbita z Shire i jego ośmiu towarzyszy, której celem jest zniszczenie potężnego pierścienia pożądanego przez Czarnego Władcę - Saurona.",
-                    Price = 20
+                    Price = 20,
+                    PosterName = "DruzynaPierscienia.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -108,7 +116,9 @@ namespace Sklep.DAL
                     Title = "Red",
                     Director = "Robert Schwentke",
                     Desc = "Emerytowani agenci specjalni CIA zostają wrobieni w zamach. By się ratować, muszą reaktywować stary zespół.",
-                    Price = 11
+                    Price = 11,
+                    PosterName = "Red.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -117,7 +127,9 @@ namespace Sklep.DAL
                     Title = "Tylko nie mów nikomu",
                     Director = "Tomasz Sekielski",
                     Desc = "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
-                    Price = 0
+                    Price = 0,
+                    PosterName = "TylkoNieMow.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -126,7 +138,9 @@ namespace Sklep.DAL
                     Title = "Iluzjonista",
                     Director = "Neil Burger",
                     Desc = "Wiedeń u progu XX w. Syn rzemieślnika, iluzjonista Eisenheim, wykorzystuje niezwykłe umiejętności, by zdobyć miłość arystokratki, narzeczonej austro-węgierskiego księcia.",
-                    Price = 13
+                    Price = 13,
+                    PosterName = "Iluzjonista.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -135,7 +149,9 @@ namespace Sklep.DAL
                     Title = "Cube",
                     Director = "Vincenzo Natali",
                     Desc = "Grupa osób budzi się w pełnym śmiertelnych pułapek sześcianie. Nieznajomi muszą zacząć współpracować ze sobą, by przeżyć.",
-                    Price = 15
+                    Price = 15,
+                    PosterName = "Cube.jpg",
+                    AddDate = DateTime.Now
                 },
                 new Film()
                 {
@@ -144,7 +160,9 @@ namespace Sklep.DAL
                     Title = "Hellraiser: Wysłannik Piekieł",
                     Director = "Clive Barker",
                     Desc = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
-                    Price = 16
+                    Price = 16,
+                    PosterName = "Hellraiser.jpg",
+                    AddDate = DateTime.Now
                 },
                 
                 new Film()
@@ -154,7 +172,9 @@ namespace Sklep.DAL
                     Title = "Milczenie Owiec",
                     Director = "Jonathan Demme",
                     Desc = "Seryjny morderca i inteligentna agentka łączą siły, by znaleźć przestępcę obdzierającego ze skóry swoje ofiary.",
-                    Price = 17
+                    Price = 17,
+                    PosterName = "MilczenieOwiec.jpg",
+                    AddDate = DateTime.Now
                 }
             };
 

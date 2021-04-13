@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Sklep.Models.Film>
+@using Sklep.Infrastructure
 @{
     ViewBag.Title = "List";
     Layout = null;
@@ -10,7 +11,7 @@
     @foreach (var film in Model)
     {
         <tr>
-            <td><img src="alone.jpg"></td>
+            <td><img src="@Url.PostersPath(film.PosterName)"></td>
             <td>
                 @film.Title
             </td>
