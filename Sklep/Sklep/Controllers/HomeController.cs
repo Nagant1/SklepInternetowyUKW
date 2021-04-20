@@ -16,10 +16,8 @@ namespace Sklep.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var categories = db.Categories.ToList();
-            IndexViewModel ivm = new IndexViewModel();
-            ivm.Categories = categories;
-            return View(ivm);
+            
+            return View();
         }
         
         public ActionResult StaticSite(string name)

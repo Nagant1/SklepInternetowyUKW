@@ -1,14 +1,24 @@
-﻿@model IEnumerable<Sklep.Models.Film>
+﻿@model Sklep.ViewModel.IndexViewModel
 @using Sklep.Infrastructure
 @{
     ViewBag.Title = "List";
-    Layout = null;
+    //Layout = null;
 }
 
-<h2>List</h2>
+<table style="background-color:burlywood">
+    <tr><td colspan="3">NOWOŚCI</td></tr>
+    <tr>
+        @foreach(var film in Model.Top3NewestFilms)
+        {
+            <td><img src="@Url.PostersPath(film.PosterName)"/></td>
+        }
+    </tr>
+</table>
+
+<h2>@Model.Category.Name = @Model.Category.Desc</h2>
 
 <table border=1px>
-    @foreach (var film in Model)
+    @foreach (var film in @Model.FilmsFromCategory)
     {
         <tr>
             <td><img src="@Url.PostersPath(film.PosterName)"></td>
