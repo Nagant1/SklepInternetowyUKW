@@ -105,7 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\alone.jpg" />
-    <Content Include="Content\banner-film.jpg" />
+    <Content Include="Content\banner-film.png" />
     <Content Include="Content\GrafikiFilmy\Cube.JPG" />
     <Content Include="Content\GrafikiFilmy\DruzynaPierscienia.JPG" />
     <Content Include="Content\GrafikiFilmy\Hellraiser.JPG" />
@@ -166,6 +166,8 @@
     <Content Include="Views\Home\MetodyPlatnosci.cshtml" />
     <Content Include="Views\Films\List.cshtml" />
     <Content Include="Views\Shared\_CategoriesMenu.cshtml" />
+    <Content Include="Views\Films\Details.cshtml" />
+    <Content Include="Views\Films\_FilmsFromCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
