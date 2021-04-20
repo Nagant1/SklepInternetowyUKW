@@ -61,8 +61,8 @@ namespace Sklep.DAL
             
             context.SaveChanges();
 
-            
-            
+
+
             var filmy = new List<Film>()
             {
                 new Film()
@@ -74,7 +74,8 @@ namespace Sklep.DAL
                     Desc = "20 sierpnia 1973 roku teksańska policja trafiła do stojącego na uboczu domu Thomasa Hewitta - byłego pracownika lokalnej rzeźni. Na miejscu odkryli rozkładające się zwłoki 33 osób, które zostały zamordowane przez psychopatycznego zabójcę noszącego na twarzy maskę z ludzkiej skóry i posługującego się piłą mechaniczną.",
                     Price = 10,
                     PosterName = "Teksanska.jpg",
-                    AddDate = new DateTime(2020,2,15)
+                    AddDate = new DateTime(2020,2,15),
+                    Length = 120
                 },
                 new Film()
                 {
@@ -85,7 +86,8 @@ namespace Sklep.DAL
                     Desc = "Mężczyzna dostaje obsesji na punkcie książki, która według niego opisuje i przewiduje jego życie i przyszłość.",
                     Price = 14,
                     PosterName = "Numer23.jpg",
-                    AddDate = new DateTime(2021,3,16)
+                    AddDate = new DateTime(2021,3,16),
+                    Length = 140
                 },
                 new Film()
                 {
@@ -96,7 +98,8 @@ namespace Sklep.DAL
                     Desc = "Uznany pisarz przenosi się na prowincję, by w spokoju tworzyć kolejne książki. Wkrótce odwiedzi go tajemniczy mężczyzna, który oskarży Raineya o plagiat.",
                     Price = 12,
                     PosterName = "SekretneOkno.jpg",
-                    AddDate = new DateTime(2020,5,4)
+                    AddDate = new DateTime(2020,5,4),
+                    Length = 180
                 },
                 new Film()
                 {
@@ -107,7 +110,8 @@ namespace Sklep.DAL
                     Desc = "Podróż hobbita z Shire i jego ośmiu towarzyszy, której celem jest zniszczenie potężnego pierścienia pożądanego przez Czarnego Władcę - Saurona.",
                     Price = 20,
                     PosterName = "DruzynaPierscienia.jpg",
-                    AddDate = new DateTime(2020,7,14)
+                    AddDate = new DateTime(2020,7,14),
+                    Length = 90
                 },
                 new Film()
                 {
@@ -118,7 +122,8 @@ namespace Sklep.DAL
                     Desc = "Emerytowani agenci specjalni CIA zostają wrobieni w zamach. By się ratować, muszą reaktywować stary zespół.",
                     Price = 11,
                     PosterName = "Red.jpg",
-                    AddDate = new DateTime(2020,2,14)
+                    AddDate = new DateTime(2020,2,14),
+                    Length = 110
                 },
                 new Film()
                 {
@@ -129,7 +134,8 @@ namespace Sklep.DAL
                     Desc = "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
                     Price = 0,
                     PosterName = "TylkoNieMow.jpg",
-                    AddDate = new DateTime(2021,4,4)
+                    AddDate = new DateTime(2021,4,4),
+                    Length = 120
                 },
                 new Film()
                 {
@@ -140,7 +146,8 @@ namespace Sklep.DAL
                     Desc = "Wiedeń u progu XX w. Syn rzemieślnika, iluzjonista Eisenheim, wykorzystuje niezwykłe umiejętności, by zdobyć miłość arystokratki, narzeczonej austro-węgierskiego księcia.",
                     Price = 13,
                     PosterName = "Iluzjonista.jpg",
-                    AddDate = new DateTime(2020,5,4)
+                    AddDate = new DateTime(2020,5,4),
+                    Length = 190
                 },
                 new Film()
                 {
@@ -151,7 +158,8 @@ namespace Sklep.DAL
                     Desc = "Grupa osób budzi się w pełnym śmiertelnych pułapek sześcianie. Nieznajomi muszą zacząć współpracować ze sobą, by przeżyć.",
                     Price = 15,
                     PosterName = "Cube.jpg",
-                    AddDate = new DateTime(2021,2,1)
+                    AddDate = new DateTime(2021,2,1),
+                    Length = 160
                 },
                 new Film()
                 {
@@ -162,9 +170,10 @@ namespace Sklep.DAL
                     Desc = "Frank Cotton nabywa tajemniczą kostkę, za pomocą której można przywołać demony z piekła.",
                     Price = 16,
                     PosterName = "Hellraiser.jpg",
-                    AddDate = new DateTime(2020,6,4)
+                    AddDate = new DateTime(2020,6,4),
+                    Length = 100
                 },
-                
+
                 new Film()
                 {
                     FilmId = 10,
@@ -174,7 +183,8 @@ namespace Sklep.DAL
                     Desc = "Seryjny morderca i inteligentna agentka łączą siły, by znaleźć przestępcę obdzierającego ze skóry swoje ofiary.",
                     Price = 17,
                     PosterName = "MilczenieOwiec.jpg",
-                    AddDate = new DateTime(2020,10,4)
+                    AddDate = new DateTime(2020,10,4),
+                    Length = 110
                 }
             };
 
