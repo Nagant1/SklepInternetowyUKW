@@ -82,3 +82,4 @@ C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.cspr
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.dll
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.pdb
 C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.Migrations.add_Length.resources
+C:\Users\Piotr\source\repos\SklepInternetowyUKW\Sklep\Sklep\obj\Debug\Sklep.csprojAssemblyReference.cache

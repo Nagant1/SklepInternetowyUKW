@@ -17,7 +17,13 @@ namespace Sklep.Controllers
         public ActionResult Index()
         {
             
-            return View();
+
+            IndexViewModel model = new IndexViewModel();
+            
+            var nowosci = db.Films.OrderByDescending(f => f.Length).Take(3);
+            model.Top3LongestFilms = nowosci;
+            return View(model);
+
         }
         
         public ActionResult StaticSite(string name)

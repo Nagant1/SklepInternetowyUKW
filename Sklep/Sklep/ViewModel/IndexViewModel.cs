@@ -13,5 +13,7 @@ namespace Sklep.ViewModel
         public IEnumerable<Film> FilmsFromCategory { get; set; }
 
         public IEnumerable<Film> Top3NewestFilms { get; set; }
+
+        public IEnumerable<Film> Top3LongestFilms { get; set; }
     }
 }

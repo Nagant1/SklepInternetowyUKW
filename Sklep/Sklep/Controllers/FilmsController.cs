@@ -29,6 +29,8 @@ namespace Sklep.Controllers
             return View(model);
         }
 
+       
+
         public ActionResult Details(int id)
         {
             var film = db.Films.Find(id);

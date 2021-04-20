@@ -1,8 +1,19 @@
-﻿
+﻿@model Sklep.ViewModel.IndexViewModel
+@using Sklep.Infrastructure
+
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
+<h2>Strona główna</h2>
 <h3>Moja strona</h3>
+
+<table style="background-color:burlywood">
+    <tr><td colspan="3">NAJDŁUŻSZE FILMY</td></tr>
+    <tr>
+        @foreach (var film in Model.Top3LongestFilms)
+        {
+            <td><a href="@Url.Action("Details", "Films", new { id = film.FilmId })"><img src="@Url.PostersPath(film.PosterName)" /></a></td>
+        }
+    </tr>
+</table>
