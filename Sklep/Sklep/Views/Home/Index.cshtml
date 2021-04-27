@@ -1,4 +1,4 @@
-﻿@model Sklep.ViewModel.IndexViewModel
+﻿@model IEnumerable<Sklep.Models.Film>
 @using Sklep.Infrastructure
 
 @{
@@ -11,7 +11,7 @@
 <table style="background-color:burlywood">
     <tr><td colspan="3">NAJDŁUŻSZE FILMY</td></tr>
     <tr>
-        @foreach (var film in Model.Top3LongestFilms)
+        @foreach (var film in Model)
         {
             <td><a href="@Url.Action("Details", "Films", new { id = film.FilmId })"><img src="@Url.PostersPath(film.PosterName)" /></a></td>
         }

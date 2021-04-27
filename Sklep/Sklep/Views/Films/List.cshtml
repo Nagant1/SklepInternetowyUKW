@@ -1,4 +1,4 @@
-﻿@model Sklep.ViewModel.IndexViewModel
+﻿@model Sklep.ViewModel.ListViewModel
 @using Sklep.Infrastructure
 @{
     ViewBag.Title = "List";
@@ -16,6 +16,8 @@
 </table>
 
 <h2>@Model.Category.Name = @Model.Category.Desc</h2>
+
+@Html.MvcSiteMap().SiteMapPath()
 
 <table border=1px>
     @foreach (var film in @Model.FilmsFromCategory)

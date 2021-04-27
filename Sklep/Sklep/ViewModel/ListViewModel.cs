@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Sklep.ViewModel
 {
-    public class IndexViewModel
+    public class ListViewModel
     {
         public Category Category { get; set; }
 
@@ -14,6 +14,6 @@ namespace Sklep.ViewModel
 
         public IEnumerable<Film> Top3NewestFilms { get; set; }
 
-        public IEnumerable<Film> Top3LongestFilms { get; set; }
+        
     }
 }

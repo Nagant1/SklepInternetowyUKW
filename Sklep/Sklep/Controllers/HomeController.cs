@@ -18,11 +18,11 @@ namespace Sklep.Controllers
         {
             
 
-            IndexViewModel model = new IndexViewModel();
             
-            var nowosci = db.Films.OrderByDescending(f => f.Length).Take(3);
-            model.Top3LongestFilms = nowosci;
-            return View(model);
+            
+            var Top3LongestFilms = db.Films.OrderByDescending(f => f.Length).Take(3);
+            
+            return View(Top3LongestFilms);
 
         }
         
@@ -30,6 +30,10 @@ namespace Sklep.Controllers
         {
             return View(name);
         }
-    
+        
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }
