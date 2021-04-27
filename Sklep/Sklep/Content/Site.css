@@ -81,3 +81,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.disabled {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px black;
+}
