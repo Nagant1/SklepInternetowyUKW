@@ -1,4 +1,5 @@
-﻿using SklepUKW.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using SklepUKW.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,8 +8,11 @@ using System.Web;
 
 namespace SklepUKW.DAL
 {
-    public class FilmsContext : DbContext
+    public class FilmsContext : IdentityDbContext<ApplicationUser>
     {
+        /// <summary>
+        /// Tworzenie tabel w bazie danych
+        /// </summary>
         public DbSet<Film> Films { get; set; }
 
         public DbSet<Category> Categories { get; set; }
@@ -22,5 +26,12 @@ namespace SklepUKW.DAL
         {
             Database.SetInitializer<FilmsContext>(new FilmsInitializer());
         }
+
+
+        public static FilmsContext Create()
+        {
+            return new FilmsContext();
+        }
+
     }
 }
