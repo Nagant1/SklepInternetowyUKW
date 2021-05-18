@@ -79,7 +79,7 @@ namespace SklepUKW.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, UserData = new UserData() };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -107,5 +107,26 @@ namespace SklepUKW.Controllers
                 ModelState.AddModelError("", error);
             }
         }
+        
+        public ActionResult Login(string ReturnUrl)
+        {
+            ViewBag.ReturnUrl = ReturnUrl;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(string ReturnUrl, LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+        }
+
     }
 }
