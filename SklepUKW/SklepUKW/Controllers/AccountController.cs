@@ -108,14 +108,14 @@ namespace SklepUKW.Controllers
             }
         }
         
-        public ActionResult Login(string ReturnUrl)
+        public ActionResult Login(string returnUrl)
         {
-            ViewBag.ReturnUrl = ReturnUrl;
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
         [HttpPost]
-        public ActionResult Login(string ReturnUrl, LoginViewModel model)
+        public ActionResult Login(LoginViewModel model, string ReturnUrl)
         {
             if (!ModelState.IsValid)
             {
