@@ -10,13 +10,11 @@ namespace SklepUKW.ViewModels
 {
     public class ManageViewModel
     {
-
         public UserData UserData { get; set; }
 
         public ChangePasswordViewModel ChangePasswordViewModel { get; set; }
 
         public ManageMessageId? Message { get; set; }
-
     }
 
     public class ChangePasswordViewModel

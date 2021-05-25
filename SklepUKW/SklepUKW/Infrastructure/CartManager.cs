@@ -99,6 +99,5 @@ namespace SklepUKW.Infrastructure
 
             return sum;
         }
-
     }
 }

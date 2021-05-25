@@ -229,13 +229,13 @@
     </Compile>
     <Compile Include="Infrastructure\AppConfig.cs" />
     <Compile Include="Infrastructure\Consts.cs" />
-    <Compile Include="Migrations\202105110824443_add_user.cs" />
-    <Compile Include="Migrations\202105110824443_add_user.designer.cs">
-      <DependentUpon>202105110824443_add_user.cs</DependentUpon>
+    <Compile Include="Migrations\202105110824425_add_User.cs" />
+    <Compile Include="Migrations\202105110824425_add_User.designer.cs">
+      <DependentUpon>202105110824425_add_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202105110915318_add_login.cs" />
-    <Compile Include="Migrations\202105110915318_add_login.designer.cs">
-      <DependentUpon>202105110915318_add_login.cs</DependentUpon>
+    <Compile Include="Migrations\202105110917591_add_UserData.cs" />
+    <Compile Include="Migrations\202105110917591_add_UserData.designer.cs">
+      <DependentUpon>202105110917591_add_UserData.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Infrastructure\CartManager.cs" />
@@ -337,11 +337,11 @@
     <EmbeddedResource Include="Migrations\202104261735097_addLengthField.resx">
       <DependentUpon>202104261735097_addLengthField.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105110824443_add_user.resx">
-      <DependentUpon>202105110824443_add_user.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105110824425_add_User.resx">
+      <DependentUpon>202105110824425_add_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105110915318_add_login.resx">
-      <DependentUpon>202105110915318_add_login.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105110917591_add_UserData.resx">
+      <DependentUpon>202105110917591_add_UserData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

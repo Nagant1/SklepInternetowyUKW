@@ -40,7 +40,6 @@ namespace SklepUKW.Controllers
             cartManager.AddToCart(id);
 
             return RedirectToAction("Index");
-
         }
 
         public ActionResult RemoveFromCart(int id)

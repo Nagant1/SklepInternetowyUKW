@@ -7,7 +7,7 @@ using System.Web;
 namespace SklepUKW.ViewModels
 {
    public class LoginViewModel
-    {
+   {
         [EmailAddress(ErrorMessage = "Nieprawidłowy format adresu email")]
         [Required(ErrorMessage = "Musisz wprowadzić login")]
         public string Email { get; set; }
@@ -32,9 +32,10 @@ namespace SklepUKW.ViewModels
         [Required(ErrorMessage = "Musisz wprowadzić hasło")]
         public string Password { get; set; }
 
+
         [DataType(DataType.Password)]
         [Display(Name = "Potwierdź hasło")]
-        [Required(ErrorMessage = "Musisz prowadzić oba hasła")]
+        [Required(ErrorMessage = "Musisz wprowadzić oba hasła")]
         [Compare("Password", ErrorMessage = "Hasła muszą być jednakowe!")]
         public string ConfirmPassword { get; set; }
     }

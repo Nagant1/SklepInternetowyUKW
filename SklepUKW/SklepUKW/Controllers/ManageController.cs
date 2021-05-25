@@ -60,9 +60,9 @@ namespace SklepUKW.Controllers
         public async Task<ActionResult> Index(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.ChangePasswordSuccess ? "Hasło zmieniono pomyślnie."
-                : message == ManageMessageId.Error ? "Wystąpił błąd."
-                : message == ManageMessageId.ChangeUserDataSuccess ? "Dane użytkownika zmieniono pomyślnie."
+                message == ManageMessageId.ChangePasswordSuccess ? "Hasło zmieniono pomyślnie"
+                : message == ManageMessageId.Error ? "Wystąpił błąd"
+                : message == ManageMessageId.ChangeUserDataSuccess ? "Dane użytkownika zmieniono pomyślnie"
                 : "";
 
             var userId = User.Identity.GetUserId();
@@ -71,11 +71,16 @@ namespace SklepUKW.Controllers
             var model = new ManageViewModel
             {
                 Message = message,
-                UserData = user.UserData 
+                UserData = user.UserData
             };
             return View(model);
         }
 
+        /// <summary>
+        /// Sprawdzić metodę ChangePassword i dopisać ChangeUserData
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ChangePassword(ChangePasswordViewModel model)

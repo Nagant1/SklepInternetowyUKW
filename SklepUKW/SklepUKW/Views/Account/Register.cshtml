@@ -9,6 +9,7 @@
     <fieldset>
         <legend> Rejestracja </legend>
         @Html.ValidationSummary("", new { @class = "error" })
+
         @Html.LabelFor(u => u.Email, "Email: ")
         @Html.TextBoxFor(u => u.Email)
         <p class="error">@Html.ValidationMessageFor(u => u.Email)</p>
@@ -24,12 +25,10 @@
         <br>
         <input type="submit" value="Zarejestruj" id="buttonRegister">
 
-
     </fieldset>
-
 }
 
-@section scripts
+@section Scripts
 {
     <script src="~/Scripts/jquery-3.6.0.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
